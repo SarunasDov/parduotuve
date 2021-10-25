@@ -1,0 +1,8 @@
+<div>
+    <h4>{{produktas?.pavadinimas}}</h4>
+    <div>Prekes kaina:{{produktas?.kaina}}</div>
+    <div>Uzsakoma:{{produktas?.kiekis}}</div>
+    <button (click)="produktas?.uzsakyti()">Uzsakyti</button>
+    <button (click)="produktas?.atsaukti()" [disabled]="!produktas?.krepselyje()">Atsaukti</button>
+    <hr>
+</div>

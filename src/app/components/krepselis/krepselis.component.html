@@ -1,0 +1,7 @@
+<p>krepselis works!</p>
+<div>Krepselyje yra:{{krepselioKiekis()}} <button *ngIf="krepselioKiekis() !== 0" (click)="pakeistiRodyma()">{{rodomosPrekes?"Slėpti krepšelį":"Rodyti krepšelį"}}</button></div>
+<div *ngIf="rodomosPrekes">
+    <div *ngFor="let preke of krepselioTurinys()">
+        {{preke.pavadinimas}} {{preke.kiekis}}
+    </div>
+</div>
