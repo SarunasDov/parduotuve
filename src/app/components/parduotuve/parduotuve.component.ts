@@ -10,9 +10,9 @@ export class ParduotuveComponent implements OnInit {
   public prekes: Preke[] = [];
 
   constructor() {
-    this.prekes.push(new Preke('tabure', 15));
-    this.prekes.push(new Preke('stalas', 25));
-    this.prekes.push(new Preke('uslanelis', 10));
+    this.prekes.push(new Preke('Nike', 15));
+    this.prekes.push(new Preke('Vans', 25));
+    this.prekes.push(new Preke('Adidas', 10));
   }
 
   ngOnInit(): void {
